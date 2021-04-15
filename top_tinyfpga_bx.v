@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-module top_tinyfpga(
+module top_tinyfpga_bx
+    (
     input CLK,
     output wire [7:0] GRAY_OUT,
     output wire USBPU

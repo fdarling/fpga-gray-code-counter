@@ -2,9 +2,9 @@
 
 module gray_code_counter
     #(
-        parameter CLOCK_MHZ = 16,
-        parameter CLOCK_MHZ_BITS = 4, // must be clog2 of above number
-        parameter BITS = 8
+    parameter CLOCK_MHZ = 16,
+    parameter CLOCK_MHZ_BITS = 4, // must be clog2 of above number
+    parameter BITS = 8
     )
     (
     input clk,
