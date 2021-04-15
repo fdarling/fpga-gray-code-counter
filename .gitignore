@@ -1,0 +1,5 @@
+# apio build system related files
+.sconsign.dblite
+hardware.asc
+hardware.bin
+hardware.blif
