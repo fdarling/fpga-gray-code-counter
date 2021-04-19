@@ -11,7 +11,7 @@ module binary_to_gray_code
     
     genvar i;
     generate
-        for (i = 0; i < BITS-1; i = i + 1) begin
+        for (i = 0; i < BITS-1; i = i + 1) begin : gen_xors
             assign g[i] = b[i] ^ b[i+1];
         end
     endgenerate
