@@ -2,13 +2,14 @@
 
 module pulse_generator
     #(
-    parameter RESET_AT = 1,
-    parameter BITS = 1 // must be clog2 of above number
+    parameter RESET_AT = 1
     )
     (
     input clk,
     output reg out
     );
+    
+    localparam BITS = $clog2(RESET_AT);
 
     // state
     reg  [BITS-1:0] counter;
